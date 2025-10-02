@@ -2,6 +2,16 @@
 
 A modern, minimal Contacts app built with Expo + React Native. It supports authentication, browsing and searching users, viewing details, managing favorites, and a simple profile view. The UI follows clean, card-based layouts with consistent spacing, meaningful icons, and subtle shadows.
 
+### App Preview
+
+<p align="center">
+  <img src="assets/login.png" alt="Login" width="220" />
+  <img src="assets/Phonebook.png" alt="Phonebook" width="220" />
+  <img src="assets/favourites.png" alt="Favorites" width="220" />
+  <img src="assets/profile.png" alt="Profile" width="220" />
+  
+</p>
+
 ### Tech Stack
 
 - React Native (Expo)
