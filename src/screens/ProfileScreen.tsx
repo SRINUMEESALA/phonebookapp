@@ -229,23 +229,6 @@ const ProfileScreen = () => {
           <Text style={styles.footerText}>Address Book App v1.0.0</Text>
         </View>
       </ScrollView>
-
-      {/* Floating Action Buttons */}
-      <View style={styles.fabContainer}>
-        <TouchableOpacity
-          style={styles.fab}
-          onPress={() => dispatch(getProfile())}
-        >
-          <Ionicons name="refresh" size={20} color="white" />
-        </TouchableOpacity>
-        <TouchableOpacity style={[styles.fab, styles.fabSecondary]}>
-          <Ionicons
-            name="ellipsis-horizontal"
-            size={20}
-            color={COLORS.PRIMARY}
-          />
-        </TouchableOpacity>
-      </View>
     </SafeAreaView>
   );
 };
@@ -470,34 +453,7 @@ const styles = StyleSheet.create({
     fontSize: TYPOGRAPHY.FONT_SIZES.SMALL,
     color: COLORS.TEXT_SECONDARY,
   },
-  fabContainer: {
-    position: "absolute",
-    right: SPACING.MD,
-    bottom: 100,
-    alignItems: "center",
-  },
-  fab: {
-    width: 56,
-    height: 56,
-    borderRadius: 28,
-    backgroundColor: COLORS.PRIMARY,
-    justifyContent: "center",
-    alignItems: "center",
-    marginBottom: SPACING.SM,
-    shadowColor: COLORS.SHADOW,
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowOpacity: 0.3,
-    shadowRadius: 8,
-    elevation: 8,
-  },
-  fabSecondary: {
-    backgroundColor: COLORS.CARD_BACKGROUND,
-    borderWidth: 1,
-    borderColor: COLORS.BORDER,
-  },
+  // Removed FAB styles
 });
 
 export default ProfileScreen;
