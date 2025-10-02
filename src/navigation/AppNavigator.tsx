@@ -91,7 +91,6 @@ const AppNavigator = () => {
       );
       if (token) {
         try {
-          // Await profile hydration to avoid route flicker
           await dispatch(getProfile()).unwrap();
         } catch (e) {}
       }
